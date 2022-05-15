@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/other.css" />
+    <link rel="preload" as="style" href="css/font.css" />
+    <link
+      rel="stylesheet"
+      href="css/font.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <title>B 💎 M M O N D</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__wrapper wrapper">
+        <div class="header__flex">
+          <div class="header__left">
+            <div class="header__burger">
+              <span class="header__burger-icon"></span>
+            </div>
+            <a href="index.html" class="header__home">
+              <img
+                src="images/other/logo.png"
+                srcset="images/other/logo@2x.png 2x"
+                alt="logo"
+                class="header__logo"
+              />
+            </a>
+          </div>
+          <div class="header__right">
+            <span class="header__search header__icon">
+              <svg width="20" height="20" fill="#fff">
+                <use href="images/sprite.svg#search" />
+              </svg>
+            </span>
+            <span class="header__like header__icon">
+              <svg width="22" height="22" fill="none" stroke="#fff">
+                <use href="images/sprite.svg#like" />
+              </svg>
+            </span>
+            <a href="cart.html" class="header__cart header__icon">
+              <svg width="22" height="22" fill="#fff">
+                <use href="images/sprite.svg#cart" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <ul class="header__list">
+          <li class="header__link">
+            <a href="index.html" class="header__item">Главная</a>
+          </li>
+          <li class="header__link">
+            <a href="catalog.html" class="header__item">Каталог</a>
+          </li>
+          <li class="header__link">
+            <a href="cart.html" class="header__item">Корзина</a>
+          </li>
+          <li class="header__link">
+            <a href="index.html" class="header__item">Оформление заказа</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="item">
+        <div class="item__wrapper wrapper">
+          <div class="item__flex">
+            <a
+              onclick="javascript:history.back();return false;"
+              class="item__back"
+            >
+              <span class="item__back-icon"></span>
+            </a>
+            <div class="item__slider">
+              <div class="swiper-wrapper">
+                <img
+                  src="images/catalog/item-3.png"
+                  srcset="images/catalog/item-3@2x.png 2x"
+                  alt="slide"
+                  class="item__image swiper-slide"
+                />
+                <img
+                  src="images/catalog/item-3.png"
+                  srcset="images/catalog/item-3@2x.png 2x"
+                  alt="slide"
+                  class="item__image swiper-slide"
+                />
+              </div>
+            </div>
+            <span class="item__like catalog__like">
+              <svg width="29" height="28" stroke="#000000" fill="none">
+                <use href="images/sprite.svg#like" />
+              </svg>
+            </span>
+          </div>
+          <div class="item__pagination"></div>
+        </div>
+      </section>
+      <section class="card">
+        <div class="card__wrapper wrapper">
+          <div class="card__top">
+            <span class="card__brand">Versace</span>
+            <span class="card__art"
+              >Арт: <span class="card__id">028085</span></span
+            >
+          </div>
+          <h1 class="card__title">Versace Pour Homme Eau de Toilette</h1>
+          <p class="card__volume">300 ml</p>
+          <div class="card__flex">
+            <p class="card__price">
+              <span class="card__sum">7 595 ₽</span>
+            </p>
+            <span class="card__orig">100% original</span>
+          </div>
+          <div class="card__grid">
+            <div class="card__quantity">
+              <span class="card__minus">-</span>
+              <input
+                class="card__num"
+                value="1"
+                type="text"
+                inputmode="numeric"
+              />
+              <span class="card__plus">+</span>
+            </div>
+            <button class="card__buy btn btn-secondary">в корзину</button>
+          </div>
+          <span class="card__left"
+            >осталась <span class="card__left-num">4</span> шт.</span
+          >
+          <div class="card__order">
+            <svg class="card__icon" width="39" height="39" fill="#000">
+              <use href="images/sprite.svg#car-order" />
+            </svg>
+            <span class="card__order-text">Быстрая доставка</span>
+          </div>
+          <div class="card__selects">
+            <div class="card__select">
+              <p class="card__select-text">Описание</p>
+              <div class="card__select-hidden">
+                <p class="card__text">
+                  <span class="card__margin">Группа аромата:</span>
+                  <span class="card__margin">Тип аромата:</span>
+                  Источник, вдохновивший парфюмеров DOLCE&GABBANA на создание
+                  композиции The One for Men, это образ молодого, энергичного и
+                  темпераментного мужчины, живущего в бурлящем ритме
+                  современного мегаполиса.
+                </p>
+                <div class="card__read">
+                  <p class="card__read-text">читать описание</p>
+                  <div class="card__read-hidden">
+                    <p class="card__text">
+                      Источник, вдохновивший парфюмеров DOLCE&GABBANA на
+                      создание композиции The One for Men, это образ молодого,
+                      энергичного и темпераментного мужчины, живущего в бурлящем
+                      ритме современного мегаполиса. Источник, вдохновивший
+                      парфюмеров DOLCE&GABBANA на создание композиции The One
+                      for Men, это образ молодого, энергичного и темпераментного
+                      мужчины, живущего в бурлящем ритме современного
+                      мегаполиса. Источник, вдохновивший парфюмеров
+                      DOLCE&GABBANA на создание композиции The One for Men, это
+                      образ молодого, энергичного и темпераментного мужчины,
+                      живущего в бурлящем ритме современного мегаполиса.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__select">
+              <p class="card__select-text">Характеристики</p>
+              <div class="card__select-hidden">
+                <p class="card__text">
+                  Источник, вдохновивший парфюмеров DOLCE&GABBANA на создание
+                  композиции The One for Men, это образ молодого, энергичного и
+                  темпераментного мужчины, живущего в бурлящем ритме
+                  современного мегаполиса. Источник, вдохновивший парфюмеров
+                  DOLCE&GABBANA на создание композиции The One for Men, это
+                  образ молодого, энергичного и темпераментного мужчины,
+                  живущего в бурлящем ритме современного мегаполиса.
+                </p>
+              </div>
+            </div>
+            <div class="card__select">
+              <p class="card__select-text">Состав</p>
+              <div class="card__select-hidden">
+                <p class="card__text">
+                  Источник, вдохновивший парфюмеров DOLCE&GABBANA на создание
+                  композиции The One for Men, это образ молодого, энергичного и
+                  темпераментного мужчины, живущего в бурлящем ритме
+                  современного мегаполиса. Источник, вдохновивший парфюмеров
+                  DOLCE&GABBANA на создание композиции The One for Men, это
+                  образ молодого, энергичного и темпераментного мужчины,
+                  живущего в бурлящем ритме современного мегаполиса.
+                </p>
+              </div>
+            </div>
+            <div class="card__select">
+              <p class="card__select-text">Информация о бренде</p>
+              <div class="card__select-hidden">
+                <p class="card__text">
+                  Источник, вдохновивший парфюмеров DOLCE&GABBANA на создание
+                  композиции The One for Men, это образ молодого, энергичного и
+                  темпераментного мужчины, живущего в бурлящем ритме
+                  современного мегаполиса. Источник, вдохновивший парфюмеров
+                  DOLCE&GABBANA на создание композиции The One for Men, это
+                  образ молодого, энергичного и темпераментного мужчины,
+                  живущего в бурлящем ритме современного мегаполиса.
+                </p>
+              </div>
+            </div>
+            <div class="card__select">
+              <p class="card__select-text">Отзывы</p>
+              <div class="card__select-hidden">
+                <div class="card__review card__review-1">
+                  <div class="card__top">
+                    <span class="card__name">Наталья</span>
+                    <div class="card__stars" data-rating="5">
+                      <svg
+                        width="14"
+                        height="13"
+                        class="card__star"
+                        fill="#E4E4E4"
+                      >
+                        <use href="images/sprite.svg#star" />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="13"
+                        class="card__star"
+                        fill="#E4E4E4"
+                      >
+                        <use href="images/sprite.svg#star" />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="13"
+                        class="card__star"
+                        fill="#E4E4E4"
+                      >
+                        <use href="images/sprite.svg#star" />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="13"
+                        class="card__star"
+                        fill="#E4E4E4"
+                      >
+                        <use href="images/sprite.svg#star" />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="13"
+                        class="card__star"
+                        fill="#E4E4E4"
+                      >
+                        <use href="images/sprite.svg#star" />
+                      </svg>
+                    </div>
+                    <span class="card__date">18.04.2022, 17:55</span>
+                  </div>
+                  <div class="card__green">
+                    <svg width="12" height="13" class="card__green-icon">
+                      <use href="images/sprite.svg#green" />
+                    </svg>
+                    <span class="card__green-text">Покупка подтверждена</span>
+                  </div>
+                  <p class="card__review-text">
+                    Купила мужу второй флакон, равных этому аромату ,для меня
+                    нет. Дорогой, солидный аромат .
+                  </p>
+                </div>
+                <div class="card__review">
+                  <div class="card__top">
+                    <span class="card__name">Ирина</span>
+                    <div class="card__stars" data-rating="4">
+                      <svg
+                        width="14"
+                        height="13"
+                        class="card__star"
+                        fill="#E4E4E4"
+                      >
+                        <use href="images/sprite.svg#star" />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="13"
+                        class="card__star"
+                        fill="#E4E4E4"
+                      >
+                        <use href="images/sprite.svg#star" />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="13"
+                        class="card__star"
+                        fill="#E4E4E4"
+                      >
+                        <use href="images/sprite.svg#star" />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="13"
+                        class="card__star"
+                        fill="#E4E4E4"
+                      >
+                        <use href="images/sprite.svg#star" />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="13"
+                        class="card__star"
+                        fill="#E4E4E4"
+                      >
+                        <use href="images/sprite.svg#star" />
+                      </svg>
+                    </div>
+                    <span class="card__date">09.02.2022, 13:09</span>
+                  </div>
+                  <div class="card__green">
+                    <svg width="12" height="13" class="card__green-icon">
+                      <use href="images/sprite.svg#green" />
+                    </svg>
+                    <span class="card__green-text">Покупка подтверждена</span>
+                  </div>
+                  <p class="card__review-text">
+                    <img
+                      loading="lazy"
+                      src="images/other/review.jpg"
+                      srcset="images/other/review@2x.jpg 2x"
+                      alt="review-image"
+                      class="card__review-image"
+                    />
+                    Очень приятный пудровый аромат с тонкой сладковатой базой,
+                    как на меня аромат не удушливый, но ине легкий купила
+                    любимому на подарок.
+                  </p>
+                </div>
+                <div class="card__review">
+                  <div class="card__top">
+                    <span class="card__name">Жанна</span>
+                    <div class="card__stars" data-rating="5">
+                      <svg
+                        width="14"
+                        height="13"
+                        class="card__star"
+                        fill="#E4E4E4"
+                      >
+                        <use href="images/sprite.svg#star" />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="13"
+                        class="card__star"
+                        fill="#E4E4E4"
+                      >
+                        <use href="images/sprite.svg#star" />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="13"
+                        class="card__star"
+                        fill="#E4E4E4"
+                      >
+                        <use href="images/sprite.svg#star" />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="13"
+                        class="card__star"
+                        fill="#E4E4E4"
+                      >
+                        <use href="images/sprite.svg#star" />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="13"
+                        class="card__star"
+                        fill="#E4E4E4"
+                      >
+                        <use href="images/sprite.svg#star" />
+                      </svg>
+                    </div>
+                    <span class="card__date">16.12.2021, 10:35</span>
+                  </div>
+                  <div class="card__green">
+                    <svg width="12" height="13" class="card__green-icon">
+                      <use href="images/sprite.svg#green" />
+                    </svg>
+                    <span class="card__green-text">Покупка подтверждена</span>
+                  </div>
+                  <p class="card__review-text">
+                    Покупала уже не первый раз, очень быстрая доставка просто
+                    класс, аромат отличный мужу понравился!! Спасибо!!!!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="famous">
+        <div class="famous__wrapper wrapper">
+          <button class="famous__button btn btn-primary">оставить отзыв</button>
+          <h2 class="famous__title">популярные товары</h2>
+          <div class="catalog__list">
+            <a href="card.html" class="catalog__item">
+              <div class="catalog__top">
+                <img
+                  src="images/catalog/item-5.png"
+                  srcset="images/catalog/item-5@2x.png 2x"
+                  loading="lazy"
+                  alt="item-image"
+                  class="catalog__image"
+                />
+                <span class="catalog__like">
+                  <svg width="18" height="18" stroke="#000000" fill="none">
+                    <use href="images/sprite.svg#like" />
+                  </svg>
+                </span>
+              </div>
+              <div class="catalog__content">
+                <p class="catalog__volume">100 ml</p>
+                <h4 class="catalog__item-title">
+                  Burberry for Men Eau de Toilette
+                </h4>
+                <p class="catalog__price">
+                  <span class="catalog__sum">5 199 ₽</span>
+                </p>
+              </div>
+            </a>
+            <a href="card.html" class="catalog__item">
+              <div class="catalog__top">
+                <img
+                  src="images/catalog/item-3.png"
+                  srcset="images/catalog/item-3@2x.png 2x"
+                  loading="lazy"
+                  alt="item-image"
+                  class="catalog__image"
+                />
+                <span class="catalog__like">
+                  <svg width="18" height="18" stroke="#000000" fill="none">
+                    <use href="images/sprite.svg#like" />
+                  </svg>
+                </span>
+              </div>
+              <div class="catalog__content">
+                <p class="catalog__volume">100 ml</p>
+                <h4 class="catalog__item-title">
+                  Versace Pour Homme Eau de Toilette
+                </h4>
+                <p class="catalog__price">
+                  <span class="catalog__sum">4 770 ₽</span>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="form__modal">
+        <div class="form__wrapper wrapper">
+          <form class="form">
+            <div class="form__top">
+              <h3 class="form__title">Оставить отзыв</h3>
+              <span class="form__close">
+                <svg width="14" height="14" fill="#000000">
+                  <use href="images/sprite.svg#close" />
+                </svg>
+              </span>
+            </div>
+            <p class="form__rate">Оцените товар от 1 до 5</p>
+            <div class="form__stars">
+              <svg
+                data-star="1"
+                class="form__star"
+                width="21"
+                height="19"
+                fill="#979797"
+              >
+                <use href="images/sprite.svg#star" />
+              </svg>
+              <svg
+                data-star="2"
+                class="form__star"
+                width="21"
+                height="19"
+                fill="#979797"
+              >
+                <use href="images/sprite.svg#star" />
+              </svg>
+              <svg
+                data-star="3"
+                class="form__star"
+                width="21"
+                height="19"
+                fill="#979797"
+              >
+                <use href="images/sprite.svg#star" />
+              </svg>
+              <svg
+                data-star="4"
+                class="form__star"
+                width="21"
+                height="19"
+                fill="#979797"
+              >
+                <use href="images/sprite.svg#star" />
+              </svg>
+              <svg
+                data-star="5"
+                class="form__star"
+                width="21"
+                height="19"
+                fill="#979797"
+              >
+                <use href="images/sprite.svg#star" />
+              </svg>
+            </div>
+            <input required type="text" class="form__input" placeholder="Имя" />
+            <input
+              required
+              type="email"
+              class="form__input"
+              placeholder="Email"
+            />
+            <textarea
+              required
+              placeholder="Текст отзыва"
+              class="form__area"
+            ></textarea>
+            <div class="form__file">
+              <input id="file" type="file" class="form__file-input" />
+              <label for="file" class="form__label">
+                <svg class="form__icon" width="18" height="18">
+                  <use href="images/sprite.svg#attach" />
+                </svg>
+                <span class="form__label-text">Прекрепить фото</span>
+              </label>
+            </div>
+            <input type="submit" class="form__submit btn btn-secondary" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <nav class="footer__wrapper wrapper">
+        <div class="footer__top">
+          <span class="footer__left">Горячая линия</span>
+          <div class="footer__right">
+            <a href="tel:+88005025260" class="footer__tel">8 800 502 52 60</a>
+            <p class="footer__graph">Ежедневно с 9:00 до 21:00</p>
+          </div>
+        </div>
+        <div class="footer__main">
+          <div class="footer__select">
+            <span class="footer__select-text">О Нас</span>
+            <ul class="footer__hide">
+              <li class="footer__link">
+                <a href="#" class="footer__item">О Магазине</a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__item">Оплата</a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__item">Доставка</a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__item">Обмен / Возврат</a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__item">Наши контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__select">
+            <span class="footer__select-text">Для Вас</span>
+            <ul class="footer__hide">
+              <li class="footer__link">
+                <a href="#" class="footer__item">Вход </a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__item">Регистрация</a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__item">Программа лояльности</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__flex">
+            <a href="#" class="footer__account">
+              <span class="footer__flex-text">Аккаунт</span>
+              <svg
+                class="footer__icon-user"
+                width="18"
+                height="18"
+                fill="#ffffff"
+              >
+                <use href="images/sprite.svg#user" />
+              </svg>
+            </a>
+            <a href="#" class="footer__male">
+              <span class="footer__flex-text">Связаться с нами</span>
+              <svg
+                width="18"
+                height="18"
+                class="footer__icon-mail"
+                fill="#ffffff"
+              >
+                <use href="images/sprite.svg#mail" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <p class="footer__copyright">
+          © 2022 Design by GSaga. All rights reserved.
+        </p>
+      </nav>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

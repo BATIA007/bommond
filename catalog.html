@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/other.css" />
+    <link rel="preload" as="style" href="css/font.css" />
+    <link
+      rel="stylesheet"
+      href="css/font.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <title>B 💎 M M O N D</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__wrapper wrapper">
+        <div class="header__flex">
+          <div class="header__left">
+            <div class="header__burger">
+              <span class="header__burger-icon"></span>
+            </div>
+            <a href="index.html" class="header__home">
+              <img
+                src="images/other/logo.png"
+                srcset="images/other/logo@2x.png 2x"
+                alt="logo"
+                class="header__logo"
+              />
+            </a>
+          </div>
+          <div class="header__right">
+            <span class="header__search header__icon">
+              <svg width="20" height="20" fill="#fff">
+                <use href="images/sprite.svg#search" />
+              </svg>
+            </span>
+            <span class="header__like header__icon">
+              <svg width="22" height="22" fill="none" stroke="#fff">
+                <use href="images/sprite.svg#like" />
+              </svg>
+            </span>
+            <a href="cart.html" class="header__cart header__icon">
+              <svg width="22" height="22" fill="#fff">
+                <use href="images/sprite.svg#cart" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <ul class="header__list">
+          <li class="header__link">
+            <a href="index.html" class="header__item">Главная</a>
+          </li>
+          <li class="header__link">
+            <a href="catalog.html" class="header__item">Каталог</a>
+          </li>
+          <li class="header__link">
+            <a href="cart.html" class="header__item">Корзина</a>
+          </li>
+          <li class="header__link">
+            <a href="index.html" class="header__item">Оформление заказа</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="man">
+        <img
+          src="images/other/man-bg.png"
+          srcset="images/other/man-bg@2x.png 2x"
+          alt="men/women"
+          class="man__image"
+        />
+        <div class="man__wrapper wrapper">
+          <h1 class="man__title">Мужская парфюмерия</h1>
+          <div class="man__grid">
+            <button class="man__button sort-btn">
+              <svg class="man__icon" width="14" height="14">
+                <use href="images/sprite.svg#sort" />
+              </svg>
+              <span class="man__button-text">сортировка</span>
+            </button>
+            <button class="man__button filter-btn">
+              <svg class="man__icon" width="16" height="14">
+                <use href="images/sprite.svg#filter" />
+              </svg>
+              <span class="man__button-text">фильтрация</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="catalog__wrapper wrapper">
+          <div class="catalog__flex">
+            <span class="catalog__quantity">1200 Товаров</span>
+            <div class="catalog__right">
+              <div class="catalog__check-disable catalog__check-container">
+                <input
+                  type="checkbox"
+                  id="catalog-1"
+                  class="catalog__checkbox"
+                />
+                <label for="catalog-1" class="catalog__label"></label>
+              </div>
+              <div class="catalog__check-container">
+                <input
+                  type="checkbox"
+                  id="catalog-2"
+                  class="catalog__checkbox"
+                />
+                <label for="catalog-2" class="catalog__label"></label>
+              </div>
+              <div class="catalog__check-container">
+                <input
+                  type="checkbox"
+                  id="catalog-3"
+                  class="catalog__checkbox"
+                />
+                <label for="catalog-3" class="catalog__label"></label>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__list">
+            <a
+              data-popular="3"
+              data-new="6"
+              data-brand="Burberry"
+              data-group="group-1"
+              data-type="Восточные"
+              href="card.html"
+              class="catalog__item"
+            >
+              <div class="catalog__top">
+                <img
+                  src="images/catalog/item-3.png"
+                  srcset="images/catalog/item-3@2x.png 2x"
+                  loading="lazy"
+                  alt="item-image"
+                  class="catalog__image"
+                />
+                <span class="catalog__like">
+                  <svg width="18" height="18" stroke="#000000" fill="none">
+                    <use href="images/sprite.svg#like" />
+                  </svg>
+                </span>
+              </div>
+              <div class="catalog__content">
+                <p class="catalog__volume">100 ml</p>
+                <h4 class="catalog__item-title">
+                  Versace Pour Homme Eau de Toilette
+                </h4>
+                <p class="catalog__price">
+                  <span class="catalog__sum">5 199 ₽</span>
+                </p>
+              </div>
+            </a>
+            <a
+              data-popular="2"
+              data-new="2"
+              data-brand="Dolce & Gabbana"
+              data-group="group-2"
+              data-new="true"
+              href="card.html"
+              class="catalog__item catalog__item-discout"
+            >
+              <div class="catalog__top">
+                <img
+                  style="height: 150px; margin-top: 30px"
+                  src="images/catalog/item-4.png"
+                  srcset="images/catalog/item-4@2x.png 2x"
+                  loading="lazy"
+                  alt="item-image"
+                  class="catalog__image"
+                />
+                <span class="catalog__like">
+                  <svg width="18" height="18" stroke="#000000" fill="none">
+                    <use href="images/sprite.svg#like" />
+                  </svg>
+                </span>
+                <span class="catalog__discout">-29%</span>
+              </div>
+              <div class="catalog__content">
+                <p class="catalog__volume">100 ml</p>
+                <h4 class="catalog__item-title">
+                  Clinique Happy for Men Eau de Toilette
+                </h4>
+                <p class="catalog__price">
+                  <span class="catalog__discout-sum">4 770 ₽</span>
+                  <span class="catalog__sum">7 295 ₽</span>
+                </p>
+              </div>
+            </a>
+            <a
+              data-popular="4"
+              data-new="3"
+              data-brand="Versace"
+              data-group="group-3"
+              data-new="true"
+              href="card.html"
+              class="catalog__item"
+            >
+              <div class="catalog__top">
+                <img
+                  src="images/catalog/item-5.png"
+                  srcset="images/catalog/item-5@2x.png 2x"
+                  loading="lazy"
+                  alt="item-image"
+                  class="catalog__image"
+                />
+                <span class="catalog__like">
+                  <svg width="18" height="18" stroke="#000000" fill="none">
+                    <use href="images/sprite.svg#like" />
+                  </svg>
+                </span>
+              </div>
+              <div class="catalog__content">
+                <p class="catalog__volume">100 ml</p>
+                <h4 class="catalog__item-title">
+                  Burberry for Men Eau de Toilette
+                </h4>
+                <p class="catalog__price">
+                  <span class="catalog__sum">5 199 ₽</span>
+                </p>
+              </div>
+            </a>
+            <a
+              data-popular="1"
+              data-new="1"
+              data-brand="Clinique"
+              data-group="group-4"
+              data-new="true"
+              href="card.html"
+              class="catalog__item"
+            >
+              <div class="catalog__top">
+                <img
+                  src="images/catalog/item-6.png"
+                  srcset="images/catalog/item-6@2x.png 2x"
+                  loading="lazy"
+                  alt="item-image"
+                  class="catalog__image"
+                />
+                <span class="catalog__like">
+                  <svg width="18" height="18" stroke="#000000" fill="none">
+                    <use href="images/sprite.svg#like" />
+                  </svg>
+                </span>
+              </div>
+              <div class="catalog__content">
+                <p class="catalog__volume">100 ml</p>
+                <h4 class="catalog__item-title">
+                  Dolce & Gabbana K by D&G Eau De Parfum
+                </h4>
+                <p class="catalog__price">
+                  <span class="catalog__sum">4 770 ₽</span>
+                </p>
+              </div>
+            </a>
+            <a
+              data-popular="6"
+              data-new="5"
+              data-brand="Hermes"
+              data-group="group-5"
+              href="card.html"
+              class="catalog__item catalog__item-discout"
+            >
+              <div class="catalog__top">
+                <img
+                  src="images/catalog/item-7.png"
+                  srcset="images/catalog/item-7@2x.png 2x"
+                  loading="lazy"
+                  alt="item-image"
+                  class="catalog__image"
+                />
+                <span class="catalog__like">
+                  <svg width="18" height="18" stroke="#000000" fill="none">
+                    <use href="images/sprite.svg#like" />
+                  </svg>
+                </span>
+                <span class="catalog__discout">-29%</span>
+              </div>
+              <div class="catalog__content">
+                <p class="catalog__volume">100 ml</p>
+                <h4 class="catalog__item-title">Hermes H-24 Eau de Toilette</h4>
+                <p class="catalog__price">
+                  <span class="catalog__discout-sum">4 770 ₽</span>
+                  <span class="catalog__sum">7 295 ₽</span>
+                </p>
+              </div>
+            </a>
+            <a
+              data-popular="5"
+              data-new="6"
+              data-brand="Creed"
+              data-group="group-6"
+              data-new="4"
+              href="card.html"
+              class="catalog__item"
+            >
+              <div class="catalog__top">
+                <img
+                  src="images/catalog/item-8.png"
+                  srcset="images/catalog/item-8@2x.png 2x"
+                  loading="lazy"
+                  alt="item-image"
+                  class="catalog__image"
+                />
+                <span class="catalog__like">
+                  <svg width="18" height="18" stroke="#000000" fill="none">
+                    <use href="images/sprite.svg#like" />
+                  </svg>
+                </span>
+              </div>
+              <div class="catalog__content">
+                <p class="catalog__volume">100 ml</p>
+                <h4 class="catalog__item-title">Creed Aventus Eau de Parfum</h4>
+                <p class="catalog__price">
+                  <span class="catalog__sum">4 770 ₽</span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <button class="catalog__more catalog__enough btn btn-primary">
+            показать еще 36 из 1200
+          </button>
+          <div class="catalog__pages">
+            <a href="#" class="catalog__prev"></a>
+            <div class="catalog__pages-list">
+              <a href="#" class="catalog__page catalog__page-active">1</a>
+              <a href="#" class="catalog__page">2</a>
+              <a href="#" class="catalog__page">...</a>
+              <a href="#" class="catalog__page">100</a>
+            </div>
+            <a href="#" class="catalog__next"></a>
+          </div>
+        </div>
+      </section>
+      <div class="sort">
+        <div class="sort__header">
+          <div class="sort__header-wrapper wrapper">
+            <span class="sort__title">Сортировка</span>
+            <span class="sort__close">
+              <svg width="14" height="14" fill="#fff">
+                <use href="images/sprite.svg#close" />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="sort__wrapper wrapper">
+          <ul class="sort__list">
+            <li class="sort__link">
+              <input
+                checked
+                id="popular"
+                name="sort"
+                type="radio"
+                class="sort__input"
+              />
+              <label for="popular" class="sort__label">
+                <span class="sort__text">От популярного</span>
+                <span class="sort__check">
+                  <svg width="10" height="8" fill="#fff">
+                    <use href="images/sprite.svg#check" />
+                  </svg>
+                </span>
+              </label>
+            </li>
+            <li class="sort__link">
+              <input id="new" name="sort" type="radio" class="sort__input" />
+              <label for="new" class="sort__label">
+                <span class="sort__text">От самого нового</span>
+                <span class="sort__check">
+                  <svg width="10" height="8" fill="#fff">
+                    <use href="images/sprite.svg#check" />
+                  </svg>
+                </span>
+              </label>
+            </li>
+            <li class="sort__link">
+              <input
+                id="grow-price"
+                name="sort"
+                type="radio"
+                class="sort__input"
+              />
+              <label for="grow-price" class="sort__label">
+                <span class="sort__text">Цена по возрастаянию</span>
+                <span class="sort__check">
+                  <svg width="10" height="8" fill="#fff">
+                    <use href="images/sprite.svg#check" />
+                  </svg>
+                </span>
+              </label>
+            </li>
+            <li class="sort__link">
+              <input
+                id="low-price"
+                name="sort"
+                type="radio"
+                class="sort__input"
+              />
+              <label for="low-price" class="sort__label">
+                <span class="sort__text">Цена по убыванию</span>
+                <span class="sort__check">
+                  <svg width="10" height="8" fill="#fff">
+                    <use href="images/sprite.svg#check" />
+                  </svg>
+                </span>
+              </label>
+            </li>
+            <li class="sort__link">
+              <input
+                id="discount"
+                name="sort"
+                type="radio"
+                class="sort__input"
+              />
+              <label for="discount" class="sort__label">
+                <span class="sort__text">Со скидкой</span>
+                <span class="sort__check">
+                  <svg width="10" height="8" fill="#fff">
+                    <use href="images/sprite.svg#check" />
+                  </svg>
+                </span>
+              </label>
+            </li>
+          </ul>
+          <button class="sort__button btn btn-secondary">сортировать</button>
+        </div>
+      </div>
+      <div class="filter sort">
+        <div class="sort__header">
+          <div class="sort__header-wrapper wrapper">
+            <span class="sort__title">Фильтры</span>
+            <span class="filter__close">
+              <svg width="14" height="14" fill="#fff">
+                <use href="images/sprite.svg#close" />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="filter__wrapper sort__wrapper">
+          <div class="wrapper">
+            <div class="filter__select filter__select-active">
+              <p class="filter__select-text">
+                Бренд
+                <span class="filter__plus">
+                  <svg width="12" height="12" fill="#DADADA">
+                    <use href="images/sprite.svg#close" />
+                  </svg>
+                </span>
+              </p>
+              <ul class="filter__select-hidden">
+                <li class="filter__link">
+                  <input
+                    checked
+                    id="brand-1"
+                    type="checkbox"
+                    class="filter__input"
+                  />
+                  <label for="brand-1" class="filter__label">
+                    <span class="filter__check">
+                      <svg width="10" height="8" fill="#fff">
+                        <use href="images/sprite.svg#check" />
+                      </svg>
+                    </span>
+                    <span class="filter__text">Все</span>
+                  </label>
+                </li>
+                <li class="filter__link">
+                  <input id="brand-2" type="checkbox" class="filter__input" />
+                  <label for="brand-2" class="filter__label">
+                    <span class="filter__check">
+                      <svg width="10" height="8" fill="#fff">
+                        <use href="images/sprite.svg#check" />
+                      </svg>
+                    </span>
+                    <span class="filter__text">Burberry</span>
+                  </label>
+                </li>
+                <li class="filter__link">
+                  <input id="brand-3" type="checkbox" class="filter__input" />
+                  <label for="brand-3" class="filter__label">
+                    <span class="filter__check">
+                      <svg width="10" height="8" fill="#fff">
+                        <use href="images/sprite.svg#check" />
+                      </svg>
+                    </span>
+                    <span class="filter__text">Versace</span>
+                  </label>
+                </li>
+                <li class="filter__link">
+                  <input id="brand-4" type="checkbox" class="filter__input" />
+                  <label for="brand-4" class="filter__label">
+                    <span class="filter__check">
+                      <svg width="10" height="8" fill="#fff">
+                        <use href="images/sprite.svg#check" />
+                      </svg>
+                    </span>
+                    <span class="filter__text">Clinique</span>
+                  </label>
+                </li>
+                <li class="filter__link">
+                  <input id="brand-5" type="checkbox" class="filter__input" />
+                  <label for="brand-5" class="filter__label">
+                    <span class="filter__check">
+                      <svg width="10" height="8" fill="#fff">
+                        <use href="images/sprite.svg#check" />
+                      </svg>
+                    </span>
+                    <span class="filter__text">Hermes</span>
+                  </label>
+                </li>
+                <li class="filter__link">
+                  <input id="brand-6" type="checkbox" class="filter__input" />
+                  <label for="brand-6" class="filter__label">
+                    <span class="filter__check">
+                      <svg width="10" height="8" fill="#fff">
+                        <use href="images/sprite.svg#check" />
+                      </svg>
+                    </span>
+                    <span class="filter__text">Creed</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="filter__select">
+              <p class="filter__select-text">
+                Группа аромата
+                <span class="filter__plus">
+                  <svg width="12" height="12" fill="#DADADA">
+                    <use href="images/sprite.svg#close" />
+                  </svg>
+                </span>
+              </p>
+              <ul class="filter__select-hidden">
+                <li class="filter__link">
+                  <input
+                    checked
+                    id="group-1"
+                    type="checkbox"
+                    class="filter__input"
+                  />
+                  <label for="group-1" class="filter__label">
+                    <span class="filter__check">
+                      <svg width="10" height="8" fill="#fff">
+                        <use href="images/sprite.svg#check" />
+                      </svg>
+                    </span>
+                    <span class="filter__text">Все</span>
+                  </label>
+                </li>
+                <li class="filter__link">
+                  <input id="group-2" type="checkbox" class="filter__input" />
+                  <label for="group-2" class="filter__label">
+                    <span class="filter__check">
+                      <svg width="10" height="8" fill="#fff">
+                        <use href="images/sprite.svg#check" />
+                      </svg>
+                    </span>
+                    <span class="filter__text">group-2</span>
+                  </label>
+                </li>
+                <li class="filter__link">
+                  <input id="group-3" type="checkbox" class="filter__input" />
+                  <label for="group-3" class="filter__label">
+                    <span class="filter__check">
+                      <svg width="10" height="8" fill="#fff">
+                        <use href="images/sprite.svg#check" />
+                      </svg>
+                    </span>
+                    <span class="filter__text">group-3</span>
+                  </label>
+                </li>
+                <li class="filter__link">
+                  <input id="group-4" type="checkbox" class="filter__input" />
+                  <label for="group-4" class="filter__label">
+                    <span class="filter__check">
+                      <svg width="10" height="8" fill="#fff">
+                        <use href="images/sprite.svg#check" />
+                      </svg>
+                    </span>
+                    <span class="filter__text">group-4</span>
+                  </label>
+                </li>
+                <li class="filter__link">
+                  <input id="group-5" type="checkbox" class="filter__input" />
+                  <label for="group-5" class="filter__label">
+                    <span class="filter__check">
+                      <svg width="10" height="8" fill="#fff">
+                        <use href="images/sprite.svg#check" />
+                      </svg>
+                    </span>
+                    <span class="filter__text">group-5</span>
+                  </label>
+                </li>
+                <li class="filter__link">
+                  <input id="group-6" type="checkbox" class="filter__input" />
+                  <label for="group-6" class="filter__label">
+                    <span class="filter__check">
+                      <svg width="10" height="8" fill="#fff">
+                        <use href="images/sprite.svg#check" />
+                      </svg>
+                    </span>
+                    <span class="filter__text">group-6</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="filter__select">
+              <p class="filter__select-text">
+                Тип аромата
+                <span class="filter__plus">
+                  <svg width="12" height="12" fill="#DADADA">
+                    <use href="images/sprite.svg#close" />
+                  </svg>
+                </span>
+              </p>
+              <ul class="filter__select-hidden">
+                <li class="filter__link">
+                  <input
+                    checked
+                    id="type-1"
+                    type="checkbox"
+                    class="filter__input"
+                  />
+                  <label for="type-1" class="filter__label">
+                    <span class="filter__check">
+                      <svg width="10" height="8" fill="#fff">
+                        <use href="images/sprite.svg#check" />
+                      </svg>
+                    </span>
+                    <span class="filter__text">Все</span>
+                  </label>
+                </li>
+                <li class="filter__link">
+                  <input id="type-2" type="checkbox" class="filter__input" />
+                  <label for="type-2" class="filter__label">
+                    <span class="filter__check">
+                      <svg width="10" height="8" fill="#fff">
+                        <use href="images/sprite.svg#check" />
+                      </svg>
+                    </span>
+                    <span class="filter__text">Восточные</span>
+                  </label>
+                </li>
+                <li class="filter__link">
+                  <input id="type-3" type="checkbox" class="filter__input" />
+                  <label for="type-3" class="filter__label">
+                    <span class="filter__check">
+                      <svg width="10" height="8" fill="#fff">
+                        <use href="images/sprite.svg#check" />
+                      </svg>
+                    </span>
+                    <span class="filter__text">Акватические</span>
+                  </label>
+                </li>
+                <li class="filter__link">
+                  <input id="type-4" type="checkbox" class="filter__input" />
+                  <label for="type-4" class="filter__label">
+                    <span class="filter__check">
+                      <svg width="10" height="8" fill="#fff">
+                        <use href="images/sprite.svg#check" />
+                      </svg>
+                    </span>
+                    <span class="filter__text">Ароматические</span>
+                  </label>
+                </li>
+                <li class="filter__link">
+                  <input id="type-5" type="checkbox" class="filter__input" />
+                  <label for="type-5" class="filter__label">
+                    <span class="filter__check">
+                      <svg width="10" height="8" fill="#fff">
+                        <use href="images/sprite.svg#check" />
+                      </svg>
+                    </span>
+                    <span class="filter__text">Гурманские</span>
+                  </label>
+                </li>
+                <li class="filter__link">
+                  <input id="type-6" type="checkbox" class="filter__input" />
+                  <label for="type-6" class="filter__label">
+                    <span class="filter__check">
+                      <svg width="10" height="8" fill="#fff">
+                        <use href="images/sprite.svg#check" />
+                      </svg>
+                    </span>
+                    <span class="filter__text">Древесные</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="filter__select">
+              <p class="filter__select-text">
+                Цена
+                <span class="filter__plus">
+                  <svg width="12" height="12" fill="#DADADA">
+                    <use href="images/sprite.svg#close" />
+                  </svg>
+                </span>
+              </p>
+              <div class="filter__select-hidden">
+                <div class="multi-range-slider">
+                  <input
+                    type="range"
+                    id="input-left"
+                    min="600"
+                    step="50"
+                    max="26000"
+                    value="1000"
+                  />
+                  <input
+                    type="range"
+                    id="input-right"
+                    min="600"
+                    step="50"
+                    max="26000"
+                    value="4000"
+                  />
+
+                  <div class="slider">
+                    <div class="track"></div>
+                    <div class="range"></div>
+                  </div>
+                </div>
+                <div class="price__wrapper">
+                  <label for="from">
+                    <span class="filter__input-label">Минимум</span>
+                    <input
+                      id="from"
+                      class="price-from"
+                      type="text"
+                      inputmode="numeric"
+                    />
+                  </label>
+                  <label for="to">
+                    <span class="filter__input-label">Максимум</span>
+                    <input
+                      id="to"
+                      class="price-to"
+                      type="text"
+                      inputmode="numeric"
+                    />
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button class="filter__show btn btn-secondary">
+              показать товары: <span class="filter__num">120</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <nav class="footer__wrapper wrapper">
+        <div class="footer__top">
+          <span class="footer__left">Горячая линия</span>
+          <div class="footer__right">
+            <a href="tel:+88005025260" class="footer__tel">8 800 502 52 60</a>
+            <p class="footer__graph">Ежедневно с 9:00 до 21:00</p>
+          </div>
+        </div>
+        <div class="footer__main">
+          <div class="footer__select">
+            <span class="footer__select-text">О Нас</span>
+            <ul class="footer__hide">
+              <li class="footer__link">
+                <a href="#" class="footer__item">О Магазине</a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__item">Оплата</a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__item">Доставка</a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__item">Обмен / Возврат</a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__item">Наши контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__select">
+            <span class="footer__select-text">Для Вас</span>
+            <ul class="footer__hide">
+              <li class="footer__link">
+                <a href="#" class="footer__item">Вход </a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__item">Регистрация</a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__item">Программа лояльности</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__flex">
+            <a href="#" class="footer__account">
+              <span class="footer__flex-text">Аккаунт</span>
+              <svg
+                class="footer__icon-user"
+                width="18"
+                height="18"
+                fill="#ffffff"
+              >
+                <use href="images/sprite.svg#user" />
+              </svg>
+            </a>
+            <a href="#" class="footer__male">
+              <span class="footer__flex-text">Связаться с нами</span>
+              <svg
+                width="18"
+                height="18"
+                class="footer__icon-mail"
+                fill="#ffffff"
+              >
+                <use href="images/sprite.svg#mail" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <p class="footer__copyright">
+          © 2022 Design by GSaga. All rights reserved.
+        </p>
+      </nav>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

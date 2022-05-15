@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/other.css" />
+    <link rel="preload" as="style" href="css/font.css" />
+    <link
+      rel="stylesheet"
+      href="css/font.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <title>B 💎 M M O N D</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__wrapper wrapper">
+        <div class="header__flex">
+          <div class="header__left">
+            <div class="header__burger">
+              <span class="header__burger-icon"></span>
+            </div>
+            <a href="index.html" class="header__home">
+              <img
+                src="images/other/logo.png"
+                srcset="images/other/logo@2x.png 2x"
+                alt="logo"
+                class="header__logo"
+              />
+            </a>
+          </div>
+          <div class="header__right">
+            <span class="header__search header__icon">
+              <svg width="20" height="20" fill="#fff">
+                <use href="images/sprite.svg#search" />
+              </svg>
+            </span>
+            <span class="header__like header__icon">
+              <svg width="22" height="22" fill="none" stroke="#fff">
+                <use href="images/sprite.svg#like" />
+              </svg>
+            </span>
+            <a href="cart.html" class="header__cart header__icon">
+              <svg width="22" height="22" fill="#fff">
+                <use href="images/sprite.svg#cart" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <ul class="header__list">
+          <li class="header__link">
+            <a href="index.html" class="header__item">Главная</a>
+          </li>
+          <li class="header__link">
+            <a href="catalog.html" class="header__item">Каталог</a>
+          </li>
+          <li class="header__link">
+            <a href="cart.html" class="header__item">Корзина</a>
+          </li>
+          <li class="header__link">
+            <a href="index.html" class="header__item">Оформление заказа</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="cart">
+        <div class="cart__wrapper wrapper">
+          <h1 class="cart__title">
+            корзина:
+            <span class="cart__things"
+              ><span class="cart__length">0</span>
+              товара
+            </span>
+          </h1>
+          <ul class="cart__list"></ul>
+        </div>
+      </section>
+      <section class="promokod">
+        <p class="promokod__text wrapper">
+          Промокод <span class="promokod__promo">SPRING</span> применен
+        </p>
+      </section>
+      <section class="product">
+        <div class="product__wrapper wrapper">
+          <div class="product__flex">
+            <div class="product__input-container">
+              <label for="promokod" class="product__label"
+                >Введите промокод:</label
+              >
+              <input placeholder="SPRING" type="text" class="product__input" />
+            </div>
+            <button class="btn btn-primary product__button">добавить</button>
+          </div>
+          <ul class="product__list">
+            <li class="product__link">
+              <span class="product__text">Цена товаров</span>
+              <span class="product__value product__sum">0 ₽</span>
+            </li>
+            <li class="product__link product__link-promo">
+              <span class="product__text">Сумма скидки</span>
+              <span class="product__value product__promo-sum">780 ₽</span>
+            </li>
+            <li class="product__link">
+              <span class="product__text">Доставка</span>
+              <span class="product__value product__order">0 ₽</span>
+            </li>
+            <li class="product__link product__link-main">
+              <span class="product__text">Сумма</span>
+              <span class="product__value product__price">0 ₽</span>
+            </li>
+          </ul>
+          <a href="order.html" class="product__next btn btn-secondary">
+            Оформить заказ
+          </a>
+        </div>
+      </section>
+      <section class="add">
+        <div class="add__wrapper wrapper">
+          <h2 class="add__title">дОБАВИТЬ К ЗАКАЗУ</h2>
+          <div class="add__slider">
+            <div class="swiper-wrapper">
+              <a href="card.html" class="catalog__item swiper-slide">
+                <div class="catalog__top">
+                  <img
+                    src="images/catalog/item-5.png"
+                    srcset="images/catalog/item-5@2x.png 2x"
+                    loading="lazy"
+                    alt="item-image"
+                    class="catalog__image"
+                  />
+                  <span class="catalog__like">
+                    <svg width="18" height="18" stroke="#000000" fill="none">
+                      <use href="images/sprite.svg#like" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="catalog__content">
+                  <p class="catalog__volume">100 ml</p>
+                  <h4 class="catalog__item-title">
+                    Burberry for Men Eau de Toilette
+                  </h4>
+                  <p class="catalog__price">
+                    <span class="catalog__sum">5 199 ₽</span>
+                  </p>
+                </div>
+              </a>
+              <a href="card.html" class="catalog__item swiper-slide">
+                <div class="catalog__top">
+                  <img
+                    src="images/catalog/item-3.png"
+                    srcset="images/catalog/item-3@2x.png 2x"
+                    loading="lazy"
+                    alt="item-image"
+                    class="catalog__image"
+                  />
+                  <span class="catalog__like">
+                    <svg width="18" height="18" stroke="#000000" fill="none">
+                      <use href="images/sprite.svg#like" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="catalog__content">
+                  <p class="catalog__volume">100 ml</p>
+                  <h4 class="catalog__item-title">
+                    Versace Pour Homme Eau de Toilette
+                  </h4>
+                  <p class="catalog__price">
+                    <span class="catalog__sum">4 770 ₽</span>
+                  </p>
+                </div>
+              </a>
+              <a
+                href="card.html"
+                class="catalog__item catalog__item-discout swiper-slide"
+              >
+                <div class="catalog__top">
+                  <img
+                    style="height: 150px; margin-top: 30px"
+                    src="images/catalog/item-4.png"
+                    srcset="images/catalog/item-4@2x.png 2x"
+                    loading="lazy"
+                    alt="item-image"
+                    class="catalog__image"
+                  />
+                  <span class="catalog__like">
+                    <svg width="18" height="18" stroke="#000000" fill="none">
+                      <use href="images/sprite.svg#like" />
+                    </svg>
+                  </span>
+                  <span class="catalog__discout">-29%</span>
+                </div>
+                <div class="catalog__content">
+                  <p class="catalog__volume">100 ml</p>
+                  <h4 class="catalog__item-title">
+                    Clinique Happy for Men Eau de Toilette
+                  </h4>
+                  <p class="catalog__price">
+                    <span class="catalog__discout-sum">4 770 ₽</span>
+                    <span class="catalog__sum">7 295 ₽</span>
+                  </p>
+                </div>
+              </a>
+              <a href="card.html" class="catalog__item swiper-slide">
+                <div class="catalog__top">
+                  <img
+                    src="images/catalog/item-3.png"
+                    srcset="images/catalog/item-3@2x.png 2x"
+                    loading="lazy"
+                    alt="item-image"
+                    class="catalog__image"
+                  />
+                  <span class="catalog__like">
+                    <svg width="18" height="18" stroke="#000000" fill="none">
+                      <use href="images/sprite.svg#like" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="catalog__content">
+                  <p class="catalog__volume">100 ml</p>
+                  <h4 class="catalog__item-title">
+                    Versace Pour Homme Eau de Toilette
+                  </h4>
+                  <p class="catalog__price">
+                    <span class="catalog__sum">4 770 ₽</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="add__pagination"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav class="footer__wrapper wrapper">
+        <div class="footer__top">
+          <span class="footer__left">Горячая линия</span>
+          <div class="footer__right">
+            <a href="tel:+88005025260" class="footer__tel">8 800 502 52 60</a>
+            <p class="footer__graph">Ежедневно с 9:00 до 21:00</p>
+          </div>
+        </div>
+        <div class="footer__main">
+          <div class="footer__select">
+            <span class="footer__select-text">О Нас</span>
+            <ul class="footer__hide">
+              <li class="footer__link">
+                <a href="#" class="footer__item">О Магазине</a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__item">Оплата</a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__item">Доставка</a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__item">Обмен / Возврат</a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__item">Наши контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__select">
+            <span class="footer__select-text">Для Вас</span>
+            <ul class="footer__hide">
+              <li class="footer__link">
+                <a href="#" class="footer__item">Вход </a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__item">Регистрация</a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__item">Программа лояльности</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__flex">
+            <a href="#" class="footer__account">
+              <span class="footer__flex-text">Аккаунт</span>
+              <svg
+                class="footer__icon-user"
+                width="18"
+                height="18"
+                fill="#ffffff"
+              >
+                <use href="images/sprite.svg#user" />
+              </svg>
+            </a>
+            <a href="#" class="footer__male">
+              <span class="footer__flex-text">Связаться с нами</span>
+              <svg
+                width="18"
+                height="18"
+                class="footer__icon-mail"
+                fill="#ffffff"
+              >
+                <use href="images/sprite.svg#mail" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <p class="footer__copyright">
+          © 2022 Design by GSaga. All rights reserved.
+        </p>
+      </nav>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
