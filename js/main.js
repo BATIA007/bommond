@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (localStorage.getItem("cartBommond")) {
     cart = JSON.parse(localStorage.getItem("cartBommond"));
   }
+  if (localStorage.getItem("likeBommond")) {
+    like = JSON.parse(localStorage.getItem("likeBommond"));
+  }
   // HEADER
 
   const burger = document.querySelector(".header__burger");
@@ -40,19 +43,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const moreCatalog = document.querySelector(".catalog__more");
-  if (moreCatalog) {
-    const items = document.querySelectorAll(".catalog__item");
-    for (let item of items) {
+  const catalogItems = document.querySelectorAll(".catalog__item");
+  if (catalogItems.length) {
+    for (let item of catalogItems) {
+      const likeBtn1 = item.querySelector(".catalog__like");
+      const id = item.dataset.id;
+      for (let obj of Object.values(like)) {
+        obj.id === id ? likeBtn1.classList.add("catalog__like-active") : null;
+      }
+
       item.addEventListener("click", (e) => {
         e.preventDefault();
-        const like = e.target.closest(".catalog__like");
-        if (like) {
-          like.classList.add("catalog__like-active");
+        const likeBtn = e.target.closest(".catalog__like");
+        if (likeBtn) {
+          if (likeBtn.classList.contains("catalog__like-active")) {
+            delete like[id];
+            localStorage.setItem("likeBommond", JSON.stringify(like));
+          } else {
+            addToLike(item);
+          }
+          likeBtn.classList.toggle("catalog__like-active");
         } else {
           location.href = item.href;
         }
-        like.style.fill = "#AC2C26";
       });
     }
   }
@@ -163,6 +176,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const items = document.querySelectorAll(".card__select");
   if (items.length) {
+    const likeBtn = document.querySelector(".item__like");
+
+    const id1 = document.querySelector(".card__id").textContent;
+    for (let obj of Object.values(like)) {
+      console.log(obj.id);
+      obj.id === id1 ? likeBtn.classList.add("catalog__like-active") : null;
+    }
+
+    likeBtn.addEventListener("click", (e) => {
+      if (likeBtn.classList.contains("catalog__like-active")) {
+        delete like[id1];
+        localStorage.setItem("likeBommond", JSON.stringify(like));
+      } else {
+        addToLike2();
+      }
+      likeBtn.classList.toggle("catalog__like-active");
+    });
+
     const btnCart = document.querySelector(".card__buy");
     const id = document.querySelector(".card__id").textContent;
     for (let obj of Object.values(cart)) {
@@ -382,10 +413,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const edits = document.querySelectorAll(".order__edit");
 
   if (edits.length) {
-    const promoItem = document.querySelector(".edit__promo-sum");
-    const isPromo = JSON.parse(localStorage.getItem("isPromo"));
-    if (!isPromo) promoItem.textContent = "0 ₽";
-
     const list = document.querySelector(".edit__list");
     for (let obj of Object.values(cart)) {
       list.insertAdjacentHTML(
@@ -491,6 +518,71 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("cartBommond", JSON.stringify(cart));
   }
 
+  function addToLike(item) {
+    const title = item.querySelector(".catalog__item-title").textContent;
+    const imgSrc = item.querySelector(".catalog__image").src;
+    const imgSrcset = item.querySelector(".catalog__image").srcset;
+    const sum = item.querySelector(".catalog__sum").textContent;
+    let sumDiscount = item.querySelector(".catalog__discout-sum");
+    if (sumDiscount) {
+      sumDiscount = sumDiscount.textContent;
+    }
+    const volume = item.querySelector(".catalog__volume").textContent;
+    const num = 1;
+    const left = item.dataset.left;
+    const id = item.dataset.id;
+    const link = item.href;
+
+    const obj = {
+      id: id,
+      imgSrc: imgSrc,
+      imgSrcset: imgSrcset,
+      title: title,
+      volume: volume,
+      sum: sum,
+      sumDiscount: sumDiscount,
+      num: num,
+      left: left,
+      link: link,
+    };
+
+    like[id] = obj;
+
+    localStorage.setItem("likeBommond", JSON.stringify(like));
+  }
+
+  function addToLike2() {
+    const title = document.querySelector(".card__title").textContent;
+    const imgSrc = document.querySelector(".item__image").src;
+    const imgSrcset = document.querySelector(".item__image").srcset;
+    const sum = document.querySelector(".card__sum").textContent;
+    let sumDiscount = document.querySelector(".card__sum-discount");
+    if (sumDiscount) {
+      sumDiscount = sumDiscount.textContent;
+    }
+    const volume = document.querySelector(".card__volume").textContent;
+    const num = 1;
+    const left = document.querySelector(".card__left-num").textContent;
+    const id = document.querySelector(".card__id").textContent;
+
+    const obj = {
+      id: id,
+      imgSrc: imgSrc,
+      imgSrcset: imgSrcset,
+      title: title,
+      volume: volume,
+      sum: sum,
+      sumDiscount: sumDiscount,
+      num: num,
+      left: left,
+      link: location.href,
+    };
+
+    like[id] = obj;
+
+    localStorage.setItem("likeBommond", JSON.stringify(like));
+  }
+
   function renderCart() {
     localStorage.setItem("cartBommond", JSON.stringify(cart));
 
@@ -549,7 +641,13 @@ document.addEventListener("DOMContentLoaded", () => {
         : Number(val.sum.replace(/[^0-9]/g, "")) * val.num;
     }
 
-    if (isPay) {
+    const isPromo = JSON.parse(localStorage.getItem("isPromo"));
+
+    if (isPay && isPromo) {
+      promo = Math.ceil(promoSum + sum * 0.03);
+    } else if (isPromo) {
+      promo = Number(promoItem.dataset.promo);
+    } else if (isPay) {
       promo = Math.ceil(promoSum + sum * 0.03);
     } else {
       promo = 0;

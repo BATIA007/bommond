@@ -93,7 +93,6 @@ textarea {
      -moz-appearance: none;
           appearance: none;
   border-radius: 0;
-  -webkit-tap-highlight-color: transparent;
 }
 
 a {
@@ -620,6 +619,7 @@ main {
   width: 100%;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 14px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;

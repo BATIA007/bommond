@@ -108,7 +108,9 @@
             </li>
             <li class="product__link product__link-promo">
               <span class="product__text">Сумма скидки</span>
-              <span class="product__value product__promo-sum">780 ₽</span>
+              <span data-promo="780" class="product__value product__promo-sum"
+                >780 ₽</span
+              >
             </li>
             <li class="product__link">
               <span class="product__text">Доставка</span>
@@ -129,7 +131,12 @@
           <h2 class="add__title">дОБАВИТЬ К ЗАКАЗУ</h2>
           <div class="add__slider">
             <div class="swiper-wrapper">
-              <a href="card.html" class="catalog__item swiper-slide">
+              <a
+                data-id="5"
+                data-left="4"
+                href="card.html"
+                class="catalog__item swiper-slide"
+              >
                 <div class="catalog__top">
                   <img
                     src="images/catalog/item-5.png"
@@ -154,7 +161,12 @@
                   </p>
                 </div>
               </a>
-              <a href="card.html" class="catalog__item swiper-slide">
+              <a
+                data-id="3"
+                data-left="2"
+                href="card.html"
+                class="catalog__item swiper-slide"
+              >
                 <div class="catalog__top">
                   <img
                     src="images/catalog/item-3.png"
@@ -180,6 +192,8 @@
                 </div>
               </a>
               <a
+                data-id="4"
+                data-left="10"
                 href="card.html"
                 class="catalog__item catalog__item-discout swiper-slide"
               >
@@ -210,11 +224,16 @@
                   </p>
                 </div>
               </a>
-              <a href="card.html" class="catalog__item swiper-slide">
+              <a
+                data-id="5"
+                data-left="12"
+                href="card.html"
+                class="catalog__item swiper-slide"
+              >
                 <div class="catalog__top">
                   <img
-                    src="images/catalog/item-3.png"
-                    srcset="images/catalog/item-3@2x.png 2x"
+                    src="images/catalog/item-6.png"
+                    srcset="images/catalog/item-6@2x.png 2x"
                     loading="lazy"
                     alt="item-image"
                     class="catalog__image"

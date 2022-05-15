@@ -71,6 +71,7 @@
   font-size: 10px;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+  color: #000;
 }
 
 .catalog__flex {
@@ -342,13 +343,13 @@
 .card__brand {
   letter-spacing: 1.12273px;
   text-transform: uppercase;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 700;
 }
 
 .card__art {
   font-weight: 800;
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 1.12273px;
   text-transform: uppercase;
   color: #979797;
@@ -395,7 +396,7 @@
 
 .card__price-discount .card__sum {
   color: #1c1c1c;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: -0.4px;
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
@@ -414,7 +415,7 @@
   display: inline-block;
   background: #018c12;
   border-radius: 10px 0px;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1;
   font-weight: 600;
   color: #fff;
@@ -819,6 +820,10 @@
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 22px;
+}
+
+.form__star {
+  -webkit-tap-highlight-color: transparent;
 }
 
 .form__input, .form__area {

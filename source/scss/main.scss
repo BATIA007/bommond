@@ -14,8 +14,14 @@ body {
 }
 
 input,
-button {
+button,
+textarea {
   appearance: none;
+  border-radius: 0;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
 }
 
 .header {
@@ -444,6 +450,7 @@ main {
   width: 100%;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 14px;
   user-select: none;
   color: #1a1a1d;
   transition: 0.1s;

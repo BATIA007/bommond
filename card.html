@@ -334,9 +334,14 @@
                     </svg>
                     <span class="card__green-text">Покупка подтверждена</span>
                   </div>
-                  <p class="card__review-text">
+                  <p
+                    style="min-height: 120px; position: relative"
+                    class="card__review-text"
+                  >
                     <img
                       loading="lazy"
+                      width="160"
+                      height="120"
                       src="images/other/review.jpg"
                       srcset="images/other/review@2x.jpg 2x"
                       alt="review-image"
@@ -415,7 +420,7 @@
           <button class="famous__button btn btn-primary">оставить отзыв</button>
           <h2 class="famous__title">популярные товары</h2>
           <div class="catalog__list">
-            <a href="card.html" class="catalog__item">
+            <a data-id="5" data-left="3" href="card.html" class="catalog__item">
               <div class="catalog__top">
                 <img
                   src="images/catalog/item-5.png"
@@ -440,7 +445,7 @@
                 </p>
               </div>
             </a>
-            <a href="card.html" class="catalog__item">
+            <a data-id="3" data-left="8" href="card.html" class="catalog__item">
               <div class="catalog__top">
                 <img
                   src="images/catalog/item-3.png"
